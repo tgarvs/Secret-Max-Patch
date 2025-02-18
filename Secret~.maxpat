@@ -1407,8 +1407,9 @@
 				"box" : 				{
 					"id" : "obj-7",
 					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 0,
+					"numinlets" : 3,
+					"numoutlets" : 7,
+					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "signal", "signal" ],
 					"patching_rect" : [ 592.0, 876.0, 393.0, 22.0 ],
 					"text" : "secret~",
 					"varname" : "secret~"
@@ -1515,7 +1516,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-19", 0 ],
-					"midpoints" : [ 1538.5, 783.752776443958282, 1330.833374500274658, 783.752776443958282 ],
+					"midpoints" : [ 1538.5, 686.752776443958282, 1330.833374500274658, 686.752776443958282 ],
 					"order" : 1,
 					"source" : [ "obj-109", 0 ]
 				}
@@ -1524,7 +1525,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-35", 0 ],
-					"midpoints" : [ 1538.5, 588.5000119805336, 1758.833385467529297, 588.5000119805336 ],
+					"midpoints" : [ 1538.5, 541.5000119805336, 1758.833385467529297, 541.5000119805336 ],
 					"order" : 0,
 					"source" : [ "obj-109", 0 ]
 				}
@@ -1540,7 +1541,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-48", 0 ],
-					"midpoints" : [ 1469.5, 588.5000119805336, 1262.833370685577393, 588.5000119805336 ],
+					"midpoints" : [ 1469.5, 721.5000119805336, 1262.833370685577393, 721.5000119805336 ],
 					"source" : [ "obj-110", 0 ]
 				}
 
@@ -1548,7 +1549,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-12", 1 ],
-					"midpoints" : [ 1920.5, 567.5, 1529.333378314971924, 567.5 ],
+					"midpoints" : [ 1920.5, 739.5, 1529.333378314971924, 739.5 ],
 					"order" : 1,
 					"source" : [ "obj-115", 0 ]
 				}
@@ -1557,7 +1558,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-13", 0 ],
-					"midpoints" : [ 1920.5, 569.333344638347626, 1638.83338189125061, 569.333344638347626 ],
+					"midpoints" : [ 1920.5, 720.333344638347626, 1638.83338189125061, 720.333344638347626 ],
 					"order" : 0,
 					"source" : [ "obj-115", 0 ]
 				}
@@ -1566,7 +1567,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-18", 0 ],
-					"midpoints" : [ 1920.5, 574.0, 975.5, 574.0 ],
+					"midpoints" : [ 1920.5, 708.0, 975.5, 708.0 ],
 					"order" : 2,
 					"source" : [ "obj-115", 0 ]
 				}
@@ -1575,7 +1576,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-19", 1 ],
-					"midpoints" : [ 1852.0, 787.252776443958282, 1341.333374500274658, 787.252776443958282 ],
+					"midpoints" : [ 1852.0, 670.252776443958282, 1341.333374500274658, 670.252776443958282 ],
 					"order" : 1,
 					"source" : [ "obj-117", 0 ]
 				}
@@ -1607,7 +1608,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-44", 0 ],
-					"midpoints" : [ 1781.5, 592.0000119805336, 1390.833374500274658, 592.0000119805336 ],
+					"midpoints" : [ 1781.5, 732.0000119805336, 1390.833374500274658, 732.0000119805336 ],
 					"source" : [ "obj-131", 0 ]
 				}
 
@@ -1662,8 +1663,17 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-148", 0 ],
+					"order" : 0,
+					"source" : [ "obj-137", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-150", 0 ],
 					"hidden" : 1,
+					"order" : 1,
 					"source" : [ "obj-137", 0 ]
 				}
 
@@ -2329,7 +2339,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-16", 0 ],
-					"midpoints" : [ 1610.5, 570.5, 788.5, 570.5 ],
+					"midpoints" : [ 1610.5, 698.5, 788.5, 698.5 ],
 					"order" : 2,
 					"source" : [ "obj-82", 0 ]
 				}
@@ -2350,19 +2360,6 @@
 			"obj-62::obj-64" : [ "Tail[1]", "Tail", 0 ],
 			"obj-62::obj-65" : [ "Spread[1]", "Spread", 0 ],
 			"obj-62::obj-66" : [ "Time[1]", "Time", 0 ],
-			"obj-7::obj-20" : [ "live.gain~[8]", "live.gain~", 0 ],
-			"obj-7::obj-21" : [ "live.gain~[9]", "live.gain~", 0 ],
-			"obj-7::obj-33" : [ "live.gain~", "live.gain~", 0 ],
-			"obj-7::obj-45" : [ "vst~", "vst~", 0 ],
-			"obj-7::obj-62::obj-23" : [ "bypass", "bypass", 0 ],
-			"obj-7::obj-62::obj-28" : [ "Size", "Size", 0 ],
-			"obj-7::obj-62::obj-3" : [ "Regen", "Regen", 0 ],
-			"obj-7::obj-62::obj-60" : [ "Damp", "Damp", 0 ],
-			"obj-7::obj-62::obj-62" : [ "Dry", "Dry", 0 ],
-			"obj-7::obj-62::obj-63" : [ "Early", "Early", 0 ],
-			"obj-7::obj-62::obj-64" : [ "Tail", "Tail", 0 ],
-			"obj-7::obj-62::obj-65" : [ "Spread", "Spread", 0 ],
-			"obj-7::obj-62::obj-66" : [ "Time", "Time", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -2447,11 +2444,8 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "secret~.maxpat",
-				"bootpath" : "~/Documents/MMT/Semester 2/Electroacoustic 2/Secret~",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
+				"name" : "secret~.mxo",
+				"type" : "iLaX"
 			}
 , 			{
 				"name" : "talk.aiff",
